@@ -7,7 +7,7 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 
-const fileList = ref<any>([]);
+const fileList = ref<Array<File>>([]);
 const onDrop = (e: DragEvent) => {
   e.stopPropagation()
   e.preventDefault()
